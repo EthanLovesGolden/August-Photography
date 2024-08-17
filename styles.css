@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    color: #202124;
+}
+
+header {
+    background-color: #4285F4;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+header h1 {
+    display: inline;
+    font-size: 24px;
+    margin: 0;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.1);
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    color: #202124;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4285F4;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    flex: 1 1 300px;
+    max-width: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item--landscape {
+    aspect-ratio: 2 / 1;
+}
+
+.gallery-item--portrait {
+    aspect-ratio: 3 / 4;
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+}
+
+.video {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video video {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #202124;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dadce0;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.form-group button {
+    background-color: #4285F4;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #3367d6;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f3f4;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+}
+
+footer a {
+    color: #4285F4;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
